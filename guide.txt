@@ -1,0 +1,21 @@
+Инструкции по работе с парсером.
+
+1. Парсер запускается как скрипт и принимает 6 параметров:
+
+	1) Токен сервисного аккаунта для подключения к YandexCloud,
+		(токен вида: iam, команда для создания токена (для cmd): yc iam create-token);
+	2) Имя файла, например: 'myfile.pdf', работа возможна только с файлами с расширением .pdf;
+	3) Пол;
+	4) Возраст;
+	5) Номер телефона;
+	6) Тэг-магазина;
+
+2. Возвращает массив (final_array);
+И печатает его.
+
+Пример запуска в терминале: python3 pdf_parser_YandexVision.py $TOKEN m_alpha_med.pdf male 22 89990002233 55
+
+Необходимо, чтобы pdf файл находился в одной директории со скриптом.
+
+Токен: t1.9euelZqYk5WOlZOTz5jOipyKnsaWkO3rnpWamozNz5yOjYmWzs6ezpmJiozl8_d3DxcB-u9fOhck_N3z9zc-FAH67186FyT8.kG7y1oFR25DXOeRxjJdTbBHd4yzzQK8Vbb_IejiU0vH2C9dIlGPpme5onrPYHX_Fh71SpBHMWd8prCULTSqRAQ
+Действителен 12 часов. (Протухнет завтра в 8 утра - 17.12.2020)
